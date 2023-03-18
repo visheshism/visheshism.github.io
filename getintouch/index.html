@@ -1,0 +1,377 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Get in touch</title>
+    <link rel="icon" type="image/png" href="/assets/ico-dd3ad0b8.png" />
+    <script src="https://kit.fontawesome.com/6bb6b675dd.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/index-10ac551b.css">
+</head>
+
+
+
+<body class=" select-none overflow-hidden">
+  <div id="sec"
+    class="h-[100vh] scale-0 transition-all duration-700 ease-in-out w-[100vw] lg:hidden fixed top-0 left-0 flex items-center justify-center bg-black z-[60]">
+    <ul
+      class="text-white flex flex-col items-center sm:space-y-11 space-y-8 tracking-wider font-poppins sm:text-4xl text-2xl">
+      <li
+        class="hover:after:w-full after:content-[''] after:w-0 after:h-[3px] relative after:absolute after:left-0 after:transition-all after:duration-300 after:-bottom-[10px] after:bg-white">
+        <a href="/#about">About</a>
+      </li>
+      <li
+        class="hover:after:w-full after:content-[''] after:w-0 after:h-[3px] relative after:absolute after:left-0 after:transition-all after:duration-300 after:-bottom-[10px] after:bg-white">
+        <a href="/#webdev">Web Dev</a>
+      </li>
+      <li
+        class="hover:after:w-full after:content-[''] after:w-0 after:h-[3px] relative after:absolute after:left-0 after:transition-all after:duration-300 after:-bottom-[10px] after:bg-white">
+        <a href="/demos/">Demos</a>
+      </li>
+
+      <li
+        class="hover:after:w-full after:content-[''] after:w-0 after:h-[3px] relative after:absolute after:left-0 after:transition-all after:duration-300 after:-bottom-[10px] after:bg-white">
+        <a href="/others/">Other Services</a>
+      </li>
+      <li
+        class="hover:after:w-full after:content-[''] after:w-0 after:h-[3px] relative after:absolute after:left-0 after:transition-all after:duration-300 after:-bottom-[10px] after:bg-white">
+        <a href="/#reviews">Reviews</a>
+      </li>
+
+    </ul>
+  </div>
+  <div class="sticky top-0 z-[70] h-16 w-full px-1 transition-all border-b-0 duration-400  border-b-cyan-400 bg-black border-t-2 border-white"
+    id="nav">
+
+    <div class="relative flex justify-around items-center w-full pt-2.5 ">
+      <div
+        class="lg:hidden absolute right-[1.5%] top-4 h-8 z-50 w-8  flex flex-col items-center justify-between transition-all duration-300 scale-75"
+        id="navvh">
+        <span class="h-1 w-full bg-white rounded-lg transform transition duration-700 ease-in-out "></span>
+        <span class="h-1 w-full bg-white rounded-lg transform transition-all duration-700 ease-in-out "></span>
+        <span class="h-1 w-full bg-white rounded-lg transform transition duration-700 ease-in-out "></span>
+      </div>
+      <div class="absolute top-3 left-4">
+        <span class="text-white float-left text-2xl tracking-wider font-speg "><a href="/">Vishesh
+            Singh</a></span>
+      </div>
+      <div class="lg:block hidden absolute sm:right-1 top-4 ">
+        <ul class="text-white flex space-x-4 xl:space-x-6 w-full text-lg font-poppins">
+          <li class="hover:text-blue-600"><a href="/#about">About Me</a></li>
+          <li>|</li>
+          <li class="hover:text-blue-600"><a href="/#webdev">Web Dev</a></li>
+          <li>|</li>
+          <li class="hover:text-blue-600"><a href="/demos/">Demos</a></li>
+          <li>|</li>
+          <li class="hover:text-blue-600"><a href="/others/">Other Services</a></li>
+          <li>|</li>
+          <li class="hover:text-blue-600"><a href="/#reviews">Reviews</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  <div
+    class=" bg-black h-[100vh] w-full flex flex-col items-center justify-center transition-all duration-150 ease-in-out"
+    id="main">
+    <div class="uppercase font-rSlab lg:text-[41px] md:text-[38px] text-[32px] text-white fixed top-16">
+      Get in Touch
+    </div>
+
+    <form class="max-w-[360px] overflow-hidden transition-all ease-linear duration-150" id="form" method="post">
+      <div class="flex flex-col space-y-3 w-full items-center">
+        <span class="fixed top-[130px] flex flex-col space-y-3 w-[70%] max-w-[440px]">
+          <label for="servtype" class="text-white text-[18px] font-jost tracking-wider">
+            Concerned Service
+          </label>
+          <select name="servtype" id="servtype"
+            class="text-black py-2.5 px-4 rounded-sm font-semibold tracking-wider font-sans text-[18px] outline-blue-800">
+            <option hidden selected class="normal-case">Select a Service</option>
+            <option value="web" class="uppercase">Web Dev</option>
+            <option value="others" class="uppercase">SMM / Graphic Design</option>
+          </select>
+        </span>
+        <span class="absolute top-[220px] opacity-0 web flex flex-col w-[70%] max-w-[440px] space-y-3">
+          <span class="flex flex-col space-y-1">
+            <label for="name" class="font-rSlab text-white">Name / Designation</label>
+            <input type="text" placeholder="Your Name / Designation"
+              class="font-semibold font-sans py-2 px-4 rounded-sm placeholder:font-semibold tracking-wider capitalize"
+              name="name1">
+          </span>
+          <span class="flex flex-col space-y-1 ">
+            <label for="typeofsite" class="font-rSlab text-white">Type of Site</label>
+            <select name="typeofsite" id="typeofsite" class="text-black py-2 px-4 rounded-sm tracking-wider font-semibold">
+              <option value="SCHOOL / COLLEGE" selected >SCHOOL / COLLEGE
+              </option>
+              <option value="ECOMMERCE STORE" >ECOMMERCE STORE
+              </option>
+              <option value="GYM" >GYM
+              </option>
+              <option value="PERSONAL BLOG" >PERSONAL BLOG</option>
+              <option value="OTHER" >OTHER</option>
+            </select>
+            <!-- $typeofsite = "schlclg";
+
+switch ($typeofsite) {
+  case "schlclg":
+    $typeofsite= "SCHOOL / COLLEGE";
+    break;
+    case "eCom":
+    $typeofsite= "ECOMMERCE STORE";
+    break;
+    case "gym":
+    $typeofsite= "GYM";
+    break;
+    case "pBlog":
+    $typeofsite= "PERSONAL BLOG";
+    break;
+    case "other":
+    $typeofsite= "OTHERS";
+    break;
+    default:
+    $typeofsite="No input";
+    break;
+}
+echo $typeofsite; -->
+          </span>
+          <span class="flex flex-col space-y-1">
+            <label for="email" class="font-rSlab text-white">Email</label>
+
+            <input type="email" placeholder="Your Email Address"
+              class="font-semibold font-sans py-2 px-4 rounded-sm placeholder:font-semibold tracking-wider lowercase placeholder:normal-case"
+              name="email1" id="email1">
+          </span>
+          <span class="flex flex-col space-y-1">
+            <label for="reqs" class="font-rSlab text-white">Requirements</label>
+            <textarea name="reqs1" id="reqs1" rows="4" placeholder="Enter your requirements for the Site"
+              class="font-semibold font-sans py-2 px-4 rounded-sm placeholder:font-semibold tracking-wider placeholder:normal-case resize-none"></textarea>
+          </span>
+          <button id="btn1"
+            class="w-full bg-[#3a64ad] hover:bg-[#0dbbb8] text-center py-2 transition-all duration-100 font-rSlab text-white font-semibold tracking-widest active:scale-95">SEND</button>
+            <div class="text-white text-[20px] font-rSlab flex justify-center aftersubmit" style="display: none;">
+              <i class="fas fa-check text-[24px] mx-3"> </i> <span>Form submitted successfully! We'll get back to you soon.</span> 
+                    </div>
+        </span>
+        <span class="absolute top-[220px] opacity-0 others flex flex-col space-y-4 w-[70%] max-w-[440px]">
+          <span class="flex flex-col space-y-1">
+            <label for="otherserv" class="text-white font-rSlab">Select the Service</label>
+            <select name="otherserv" class="text-black py-2 px-4 rounded-sm tracking-wider font-semibold text-[18px]" id="otherserv">
+              <option value="Graphic Design" selected>Graphic Design</option>
+              <option value="Social Media Marketing">Social Media Marketing</option>
+            </select>
+          </span>
+          <input type="email" placeholder="Your Email Address"
+            class="font-semibold font-sans py-2 px-4 rounded-sm placeholder:font-semibold tracking-wider lowercase placeholder:normal-case"
+            name="email2" id="email2">
+          <textarea name="reqs2" id="reqs2" rows="4" placeholder="Enter your requirements"
+            class=" font-semibold font-sans py-2 px-4 rounded-sm placeholder:font-semibold tracking-wider placeholder:normal-case resize-none"></textarea>
+          <button id="btn2"
+            class="w-full bg-[#3a64ad] hover:bg-[#0dbbb8] text-center py-2 transition-all duration-100 font-rSlab text-white font-semibold tracking-widest active:scale-95">SEND</button>
+            <div class="text-orange-700 text-[20px] font-rSlab flex justify-center aftersubmit" style="display: none;">
+              <i class="fas fa-check text-[24px] mx-3"> </i> <span>Form submitted successfully! We'll get back to you soon.</span> 
+                    </div>
+        </span>
+      </div>
+    </form>
+  </div>
+  <footer
+    class="absolute bottom-0 z-20 min-h-[80px] flex flex-col justify-around w-full bg-black pt-1 border-t-2 border-white">
+    <h3 class="py-5 text-center font-poppins text-white sm:text-2xl text-xl tracking-wider ">Vishesh Singh © 2022
+      All rights reserved.</h3>
+  </footer>
+  <script>
+
+  // Disable right-click
+document.addEventListener('contextmenu', (e) =>{ e.preventDefault()})
+document.onkeydown = function(e) {
+if(event.keyCode == 123) {
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'H'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'A'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'F'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)){
+return false;
+}
+}
+
+
+
+
+    const others = document.querySelector('.others')
+    const web = document.querySelector('.web')
+    const form = document.querySelector('#form')
+    const servtype = document.querySelector('#servtype')
+    const body = document.querySelector("#main")
+    const bt1 = document.querySelector("#btn1")
+    const bt2 = document.querySelector("#btn2")
+    const submit = document.querySelector("#submit")
+    const name1 = web.querySelector("input[name='name1']")
+    const email1 = web.querySelector("input[name='email1']")
+    const reqs1 = web.querySelector("#reqs1")
+    const email2 = others.querySelector("input[name='email2']")
+    const reqs2 = others.querySelector("#reqs2")
+    const form1 = [name1, email1, reqs1]
+    const form2 = [email2, reqs2]
+
+    function checkval() {
+      if (servtype.value == "web") {
+        main.style.background = '#000'
+        rem1add2(web, others, form1, form2)
+      } else if (servtype.value == "others") {
+
+        main.style.backgroundImage = `linear-gradient(330deg, #AFE3BC 57%, #8E8BE0 70%)`
+        rem1add2(others, web, form2, form1)
+      }
+    }
+
+    function ValidateEmail(mail) {
+      if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.getElementById(mail).value.trim())) {
+        return true
+      }
+      return false
+    }
+
+    servtype.addEventListener("change", () => {
+      checkval()
+    })
+
+    web.querySelectorAll("input").forEach(item => item.addEventListener("input", () => {
+      document.querySelector('.aftersubmit').style.display = "none"
+    }))
+
+    others.querySelectorAll("input").forEach(item => item.addEventListener("input", () => {
+      document.querySelectorAll('.aftersubmit').forEach(item => item.style.display = "none"
+      )
+    }))
+
+    function op0op1(el) {
+      el.classList.toggle("opacity-0")
+      el.classList.toggle("animate-scale")
+      setTimeout(() => el.classList.toggle("animate-scale"), 2100)
+    }
+
+    function rem1add2(el1, el2, fm1, fm2) {
+      if (!el2.classList.contains("opacity-0")) {
+        el2.classList.toggle("opacity-0")
+        el2.classList.toggle("z-50")
+        el1.classList.toggle("z-50")
+        op0op1(el1)
+        fm2.forEach(ele => ele.toggleAttribute("required"))
+        fm1.forEach(ele => ele.toggleAttribute("required"))
+
+      } else {
+        op0op1(el1)
+        el1.classList.toggle("z-50")
+        fm1.forEach(ele => ele.toggleAttribute("required"))
+
+      }
+    }
+
+    function setVal(selectid, optionval) {
+      document.getElementById(selectid).value = optionval
+    }
+
+
+    function valForm(fmlst) {
+      fmlst.forEach(item => {
+        if (item.value.trim().length > 0 || item.value != "") {
+          console.log(item.value)
+          item.value = ""
+        }
+      })
+    }
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault()
+    })
+
+
+
+    function formFunc(submiturl, wt, classtodisplay, emailaddrid) {
+      classtodisplay.querySelector('.aftersubmit').style.display = "none"
+      if (ValidateEmail(emailaddrid)) {
+        var xhr = new XMLHttpRequest();
+        var data = new FormData(form);
+        //open the request
+        xhr.open('POST', submiturl)
+        //send the form data
+        xhr.send(data);
+
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState == XMLHttpRequest.DONE) {
+            form.reset();
+            setVal("servtype", wt)
+            classtodisplay.querySelector('.aftersubmit').style.display = "block"
+          }
+        }
+
+      }
+    }
+
+
+    bt1.addEventListener("click", (e) => {
+      formFunc('/submissions/submit1.php', 'web', e.target.parentElement,"email1")
+    })
+
+    bt2.addEventListener("click", (e) => {
+      formFunc('/submissions/submit2.php', 'others', e.target.parentElement,"email2")
+    })
+
+
+    // nav menu responsiveness
+    navy = document.getElementById("navvh");
+    sec = document.getElementById("sec");
+    nav = document.querySelector("#nav")
+    nav1 = navy.querySelector("span:nth-child(1)");
+    nav2 = navy.querySelector("span:nth-child(2)");
+    nav3 = navy.querySelector("span:nth-child(3)");
+
+    navy.onclick = function () {
+
+      nav.classList.toggle("border-b-0");
+      nav.classList.toggle("border-b-2");
+
+      sec.classList.toggle("scale-0");
+
+      nav1.classList.toggle("rotate-45");
+      nav1.classList.toggle("translate-y-3.5");
+
+      nav3.classList.toggle("-rotate-45");
+      nav3.classList.toggle("-translate-y-3.5");
+
+
+      nav2.classList.toggle("w-full");
+      nav2.classList.toggle("w-0");
+      document.body.classList.toggle("overflow-y-hidden")
+      setTimeout(() => {
+        navy.classList.toggle("hover:rotate-[180deg]");
+      }, 200);
+    }
+  </script>
+</body>
+
+</html>
