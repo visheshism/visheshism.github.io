@@ -8,10 +8,13 @@
     <title>Demos</title>
     
     <link rel="icon" type="image/png" href="/assets/ico-dd3ad0b8.png" />
-  <link rel="stylesheet" href="/assets/style-0e3694cb.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="select-none overflow-hidden">
+<body class="select-none overflow-x-hidden">
+  <div class="min-h-[100vh] absolute w-full -z-20"
+    style="background-image:linear-gradient(230deg, #A5B0DB 8%, #D65A79 87%)">
+  </div>
     <div id="sec"
         class="h-[100vh] scale-0 transition-all duration-700 ease-in-out w-[100vw] lg:hidden fixed top-0 left-0 flex items-center justify-center bg-black z-40">
         <ul
@@ -42,7 +45,8 @@
         id="nav">
         <!-- sticky top-0 z-50 bg-black backdrop-filter backdrop-blur-lg bg-opacity-80 firefox:bg-opacity-90 -->
         <div class="relative flex justify-around items-center w-full pt-2.5 ">
-            <div class="lg:hidden absolute right-[1.5%] top-4 h-8 z-50 w-8  flex flex-col items-center justify-between transition-all duration-300 scale-75"
+            <div 
+            class="lg:hidden absolute right-[1.5%] top-4 h-8 z-50 w-8  flex flex-col items-center justify-between transition-all duration-300 scale-75"
                 id="navvh">
                 <span class="h-1 w-full bg-white rounded-lg transform transition duration-700 ease-in-out "></span>
                 <span class="h-1 w-full bg-white rounded-lg transform transition-all duration-700 ease-in-out "></span>
@@ -71,61 +75,60 @@
         </div>
     </div>
 
-    <div class="min-h-[100vh] absolute w-full -z-20"
-        style="background-image:linear-gradient(230deg, #A5B0DB 8%, #D65A79 87%)">
-        <div class="absolute top-[10%] w-full py-4 flex items-center justify-center flex-col">
-            <div
-                class="font-rSlab font-semibold tracking-widest text-[35px] md:text-[38px] lg:text-[46px] xl:scale-110">
+  <div class="px-8 w-full py-4 mb-4 flex items-center justify-center flex-col">
+    <div class="font-rSlab font-bold tracking-widest text-[35px] md:text-[38px] lg:text-[46px] xl:scale-110">
                 DEMOS</div>
 
             <div class="flex flex-col space-y-2.5 xl:space-y-5 py-4">
-                <div class="flex space-x-4 lg:space-x-6 xl:space-x-10 py-2 items-center xl:scale-[120%]">
-                    <a href="http://ed.aislinthemes.com/modern/" target="_blank"><img src="/assets/school-bb3fbba3.png"
-                            alt="school" class="max-w-[50px] lg:max-w-[60px]"></a>
-                    <span class="font-jost font-semibold lg:text-[28px]  text-[26px] md:text-[30px]"><a
-                            href="http://ed.aislinthemes.com/modern/" target="_blank">SCHOOL SITE DEMO</a></span>
+                <div class="flex space-x-4 lg:space-x-6 xl:space-x-10 py-2 items-center xl:scale-[120%] ">
+                    <a href="http://ed.aislinthemes.com/modern/" target="_blank"><img src="/assets/school-bb3fbba3.png" alt="school"
+                    class="max-w-[50px] lg:max-w-[60px]"></a>
+                    <a
+                            href="http://ed.aislinthemes.com/modern/" target="_blank" class="font-jost font-semibold lg:text-[28px] max-[450px]:text-[22px] text-[26px] md:text-[30px]">SCHOOL SITE DEMO</a>
                 </div>
                 <div class="flex space-x-4 lg:space-x-6 xl:space-x-10 py-2.5 items-center xl:scale-[120%]">
                     <a href="https://estudiar.vamtam.com/" target="_blank"><img src="/assets/college-035fd491.png" alt="college"
                             class="max-w-[50px] lg:max-w-[60px]"></a>
-                    <span class="font-jost font-semibold lg:text-[28px]  text-[26px] md:text-[30px]"><a
-                            href="https://estudiar.vamtam.com/" target="_blank">COLLEGE SITE DEMO</a></span>
+                    <a
+                            href="https://estudiar.vamtam.com/" target="_blank" class="font-jost font-semibold lg:text-[28px]  text-[26px] md:text-[30px] max-[450px]:text-[22px]">COLLEGE SITE DEMO</a>
                 </div>
                 <div class="flex space-x-4 lg:space-x-6 xl:space-x-10 py-2.5 items-center xl:scale-[120%]">
                     <a href="https://kropp.qodeinteractive.com/" target="_blank"><img src="/assets/gym-7f63f8ab.png" alt="gym"
                             class="max-w-[50px] lg:max-w-[60px]"></a>
-                    <span class="font-jost font-semibold lg:text-[28px] text-[26px] md:text-[30px]"><a
-                            href="https://kropp.qodeinteractive.com/" target="_blank">GYM SITE
-                            DEMO</a></span>
+                    <a
+                            href="https://kropp.qodeinteractive.com/" target="_blank" class="font-jost font-semibold lg:text-[28px] text-[26px] md:text-[30px] max-[450px]:text-[22px]">GYM SITE
+                            DEMO</a>
                 </div>
                 <div class="flex space-x-4 lg:space-x-6 xl:space-x-10 py-2.5 items-center xl:scale-[120%]">
                     <a href="https://demo2.wpopal.com/ekommart/home-23/" target="_blank"><img src="/assets/ecom-fe36a28e.png"
                             alt="ecom" class="max-w-[50px] lg:max-w-[60px]"></a>
-                    <span class="font-jost font-semibold lg:text-[28px]  text-[26px] md:text-[30px]"><a
-                            href="https://demo2.wpopal.com/ekommart/home-23/" target="_blank">ECOMMERCE
-                            STORE DEMO</a></span>
+                    <a
+                            href="https://demo2.wpopal.com/ekommart/home-23/" target="_blank" class="font-jost font-semibold lg:text-[28px] text-[26px] md:text-[30px] max-[450px]:text-[22px]">ECOMMERCE
+                            STORE DEMO</a>
                 </div>
             </div>
             <a href="/getintouch/" ><span
-                class="bg-transparent border-[5px] border-black px-6 py-2 md:px-8 rounded-md font-rSlab text-[21px] hover:bg-black hover:text-white md:scale-100 font-semibold tracking-wider hover:scale-90 hover:tracking-widest transition-all ease-in-out duration-150">I'm
+                class="bg-transparent border-[4px] border-black px-6 py-2 md:px-8 rounded-md font-rSlab text-[21px] hover:bg-black hover:text-white md:scale-100 font-bold tracking-wider hover:scale-90 hover:tracking-widest transition-all ease-in-out duration-150">I'm
                 Interested</span></a>
         </div>
-    </div>
-    <footer class="absolute bottom-0 z-20 min-h-[120px] flex flex-col justify-around w-full bg-black pt-1">
+ 
+    <footer class="z-20 min-h-[120px] flex flex-col justify-around w-full bg-black pt-1">
         <div
-            class="text-white flex justify-center  space-x-6 sm:space-x-8 lg:space-x-10 w-[80%] py-4 items-center mx-auto ">
-            <span class="animate-bounce hover:animate-none  sm:text-xl text-lg ">Build your Website Now</span>
-            <button
-                class="border h-[40px] px-4 py-2 rounded-lg text-cyan-300 font-semibold tracking-wide sm:text-lg text-base flex items-center hover:bg-white hover:text-black hover:scale-95 hover:transition-all hover:duration-500 lg:-ml-52"><a
-                    href="/getintouch/">Get in Touch</a></button>
+            class="text-white flex justify-center  space-x-6 sm:space-x-8 lg:space-x-10 w-[90%] py-4 items-center mx-auto ">
+            <span class="animate-bounce hover:animate-none  sm:text-xl text-lg max-[450px]:text-base ">Build your Website Now</span>
+            <a
+                class="border h-[40px] px-4 py-2 rounded-lg text-cyan-300 font-semibold tracking-wide sm:text-lg text-base flex items-center hover:bg-white hover:text-black hover:scale-95 hover:transition-all hover:duration-500 lg:-ml-52"
+                    href="/getintouch/">Get in Touch</a>
         </div>
         <hr class="w-[97%] mx-auto">
         <h3 class="py-5 text-center font-poppins text-white sm:text-2xl text-xl tracking-wider ">Vishesh Singh © 2022
             All rights reserved.</h3>
     </footer>
+    
     <script src="https://kit.fontawesome.com/6bb6b675dd.js" crossorigin="anonymous"></script>
 
     <script>
+    document.querySelector("footer h3").innerHTML =`Vishesh Singh © ${(new Date()).getFullYear("")} All rights reserved. `
         navy = document.getElementById("navvh");
         sec = document.getElementById("sec");
         nav = document.querySelector("#nav")
