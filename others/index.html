@@ -1,8 +1,8 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Others</title>
@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="assets/index-25242436.css">
 </head>
 
-<body class="bg-black text-white select-none overflow-hidden">
+<body class=" text-white select-none overflow-x-hidden">
     <div id="sec"
         class="h-[100vh] scale-0 transition-all duration-700 ease-in-out w-[100vw] lg:hidden fixed top-0 left-0 flex items-center justify-center bg-black z-40">
         <ul
@@ -69,15 +69,14 @@
         </div>
     </div>
 
+<div class="fixed w-[100vw] h-[100vh] top-0 -z-20" style="background-image: linear-gradient(230deg, #43A28A 37%, #376FB6 69%);">
+</div>
 
-
-    <div class="w-[100vw] py-8 flex flex-col items-start relative top-0 h-[100vh] justify-start"
-        style="background-image: linear-gradient(230deg, #43A28A 37%, #376FB6 69%);">
+    <div class="px-4 w-full py-8 flex flex-col items-start justify-start z-20"
+        >
         <div class="font-poppins xl:text-[41px] md:text-[34px] text-[32px] text-center w-full">
             OTHERS
         </div>
-
-
             <div class="font-rSlab xl:text-[41px] md:text-[34px] text-[32px] uppercase text-[#4d0101] font-semibold text-center w-full my-4">
                 Graphic Design
         </div>
@@ -106,19 +105,20 @@
 
     </div>
     
-    <footer class="fixed bottom-0 z-20 min-h-[120px] flex flex-col justify-around w-full bg-black pt-1">
+    <footer class="bg-black z-20 min-h-[120px] flex flex-col justify-around w-full  pt-1">
         <div
-            class="text-white flex justify-center  space-x-6 sm:space-x-8 lg:space-x-10 w-[80%] py-4 items-center mx-auto ">
-            <span class="animate-bounce hover:animate-none  sm:text-xl text-lg ">Build your Website Now</span>
-            <button
-                class="border h-[40px] px-4 py-2 rounded-lg text-cyan-300 font-semibold tracking-wide sm:text-lg text-base flex items-center hover:bg-white hover:text-black hover:scale-95 hover:transition-all hover:duration-500 lg:-ml-52"><a
-                    href="/getintouch/">Get in Touch</a></button>
+            class="text-white flex justify-center  space-x-6 sm:space-x-8 lg:space-x-10 w-[90%] py-4 items-center mx-auto ">
+            <span class="animate-bounce hover:animate-none  sm:text-xl text-lg max-[450px]:text-base ">Build your Website Now</span>
+            <a
+                class="border h-[40px] px-4 py-2 rounded-lg text-cyan-300 font-semibold tracking-wide sm:text-lg text-base flex items-center hover:bg-white hover:text-black hover:scale-95 hover:transition-all hover:duration-500 lg:-ml-52"
+                    href="/getintouch/">Get in Touch</a>
         </div>
         <hr class="w-[97%] mx-auto">
         <h3 class="py-5 text-center font-poppins text-white sm:text-2xl text-xl tracking-wider ">Vishesh Singh © 2022
             All rights reserved.</h3>
     </footer>
     <script>
+    document.querySelector("footer h3").innerHTML =`Vishesh Singh © ${(new Date()).getFullYear("")} All rights reserved. `;
         navy = document.getElementById("navvh");
         sec = document.getElementById("sec");
         nav = document.querySelector("#nav")
