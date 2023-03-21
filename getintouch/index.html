@@ -1,14 +1,16 @@
 <html lang="en">
 
 <head>
+  <script type="module" src="/@vite/client"></script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Get in touch</title>
+    <title>Get in Touch</title>
     <link rel="icon" type="image/png" href="/assets/ico-dd3ad0b8.png" />
-
-  <link rel="stylesheet" href="assets/index-10ac551b.css">
+    <script src="https://kit.fontawesome.com/6bb6b675dd.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 
@@ -74,7 +76,7 @@
     </div>
   </div>
   <div
-    class=" bg-black h-[100vh] w-full flex flex-col items-center justify-center transition-all duration-150 ease-in-out"
+    class="min-h-[100vh] bg-black w-full flex flex-col items-center justify-center transition-all duration-150 ease-in-out"
     id="main">
     <div class="uppercase font-rSlab lg:text-[41px] md:text-[38px] text-[32px] text-white absolute top-16 pt-2">
       Get in Touch
@@ -83,7 +85,7 @@
     <form class="max-w-[360px] transition-all ease-linear duration-150" id="form" method="post">
       <div class="flex flex-col space-y-3 w-full items-center">
         <span class="absolute top-[130px] flex flex-col space-y-3 w-[70%] max-w-[440px]">
-          <label for="servtype" class="text-white text-[18px] font-jost tracking-wider">
+          <label for="servtype" class="text-white text-[18px] font-jost tracking-wider pt-3">
             Concerned Service
           </label>
           <select name="servtype" id="servtype"
@@ -175,206 +177,14 @@ echo $typeofsite; -->
         </span>
       </div>
     </form>
-  </div>
-  <footer
-    class="absolute bottom-0 z-20 min-h-[80px] flex flex-col justify-around w-full bg-black pt-1 border-t-2 border-cyan-400">
-    <h3 class="py-5 text-center font-poppins text-white sm:text-2xl text-xl tracking-wider ">Vishesh Singh © 2022
-      All rights reserved.</h3>
-  </footer>
-  <script>
-document.querySelector("footer h3").innerHTML =`Vishesh Singh © ${(new Date()).getFullYear("")} All rights reserved. `;
-  // Disable right-click
-document.addEventListener('contextmenu', (e) =>{ e.preventDefault()})
-document.onkeydown = function(e) {
-if(event.keyCode == 123) {
-return false;
-}
-if(e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)){
-return false;
-}
-if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
-return false;
-}
-if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
-return false;
-}
-if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
-return false;
-}
-if(e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)){
-return false;
-}
-if(e.ctrlKey && e.keyCode == 'H'.charCodeAt(0)){
-return false;
-}
-if(e.ctrlKey && e.keyCode == 'A'.charCodeAt(0)){
-return false;
-}
-if(e.ctrlKey && e.keyCode == 'F'.charCodeAt(0)){
-return false;
-}
-if(e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)){
-return false;
-}
-}
+    </div>
+    <footer class="absolute bottom-0 z-20 min-h-[80px] flex flex-col justify-around w-full bg-black pt-1 border-t-2 border-cyan-400">
+      
+      <h3 class="py-5 text-center font-poppins text-white md:text-2xl text-xl tracking-wider max-[460px]:text-[19px] px-6 break-all">Vishesh Singh © 2022
+        All rights reserved.</h3>
+</footer>
 
-
-
-
-    const others = document.querySelector('.others')
-    const web = document.querySelector('.web')
-    const form = document.querySelector('#form')
-    const servtype = document.querySelector('#servtype')
-    const body = document.querySelector("#main")
-    const bt1 = document.querySelector("#btn1")
-    const bt2 = document.querySelector("#btn2")
-    const submit = document.querySelector("#submit")
-    const name1 = web.querySelector("input[name='name1']")
-    const email1 = web.querySelector("input[name='email1']")
-    const reqs1 = web.querySelector("#reqs1")
-    const email2 = others.querySelector("input[name='email2']")
-    const reqs2 = others.querySelector("#reqs2")
-    const form1 = [name1, email1, reqs1]
-    const form2 = [email2, reqs2]
-
-    function checkval() {
-      if (servtype.value == "web") {
-        main.style.background = '#000'
-        rem1add2(web, others, form1, form2)
-      } else if (servtype.value == "others") {
-
-        main.style.backgroundImage = `linear-gradient(330deg, #AFE3BC 57%, #8E8BE0 70%)`
-        rem1add2(others, web, form2, form1)
-      }
-    }
-
-    function ValidateEmail(mail) {
-      if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.getElementById(mail).value.trim())) {
-        return true
-      }
-      return false
-    }
-
-    servtype.addEventListener("change", () => {
-      if(this.value!=''){
-        document.querySelector("footer").classList.remove("absolute")
-        document.body.classList.remove("overflow-hidden")
-        document.body.classList.add("overflow-x-hidden")
-      }
-      checkval()
-    })
-
-    web.querySelectorAll("input").forEach(item => item.addEventListener("input", () => {
-      document.querySelector('.aftersubmit').style.display = "none"
-    }))
-
-    others.querySelectorAll("input").forEach(item => item.addEventListener("input", () => {
-      document.querySelectorAll('.aftersubmit').forEach(item => item.style.display = "none"
-      )
-    }))
-
-    function op0op1(el) {
-      el.classList.toggle("opacity-0")
-      el.classList.toggle("animate-scale")
-      setTimeout(() => el.classList.toggle("animate-scale"), 2100)
-    }
-
-    function rem1add2(el1, el2, fm1, fm2) {
-      if (!el2.classList.contains("opacity-0")) {
-        el2.classList.toggle("opacity-0")
-        el2.classList.toggle("z-50")
-        el1.classList.toggle("z-50")
-        op0op1(el1)
-        fm2.forEach(ele => ele.toggleAttribute("required"))
-        fm1.forEach(ele => ele.toggleAttribute("required"))
-
-      } else {
-        op0op1(el1)
-        el1.classList.toggle("z-50")
-        fm1.forEach(ele => ele.toggleAttribute("required"))
-
-      }
-    }
-
-    function setVal(selectid, optionval) {
-      document.getElementById(selectid).value = optionval
-    }
-
-
-    function valForm(fmlst) {
-      fmlst.forEach(item => {
-        if (item.value.trim().length > 0 || item.value != "") {
-          console.log(item.value)
-          item.value = ""
-        }
-      })
-    }
-
-    form.addEventListener("submit", (e) => {
-      e.preventDefault()
-    })
-
-
-
-    function formFunc(submiturl, wt, classtodisplay, emailaddrid) {
-      classtodisplay.querySelector('.aftersubmit').style.display = "none"
-      if (ValidateEmail(emailaddrid)) {
-        var xhr = new XMLHttpRequest();
-        var data = new FormData(form);
-        //open the request
-        xhr.open('POST', submiturl)
-        //send the form data
-        xhr.send(data);
-
-        xhr.onreadystatechange = function () {
-          if (xhr.readyState == XMLHttpRequest.DONE) {
-            form.reset();
-            setVal("servtype", wt)
-            classtodisplay.querySelector('.aftersubmit').style.display = "block"
-          }
-        }
-
-      }
-    }
-
-
-    bt1.addEventListener("click", (e) => {
-      formFunc('/submissions/submit1.php', 'web', e.target.parentElement,"email1")
-    })
-
-    bt2.addEventListener("click", (e) => {
-      formFunc('/submissions/submit2.php', 'others', e.target.parentElement,"email2")
-    })
-
-
-    // nav menu responsiveness
-    navy = document.getElementById("navvh");
-    sec = document.getElementById("sec");
-    nav = document.querySelector("#nav")
-    nav1 = navy.querySelector("span:nth-child(1)");
-    nav2 = navy.querySelector("span:nth-child(2)");
-    nav3 = navy.querySelector("span:nth-child(3)");
-
-    navy.onclick = function () {
-
-
-      sec.classList.toggle("scale-0");
-
-      nav1.classList.toggle("rotate-45");
-      nav1.classList.toggle("translate-y-3.5");
-
-      nav3.classList.toggle("-rotate-45");
-      nav3.classList.toggle("-translate-y-3.5");
-
-
-      nav2.classList.toggle("w-full");
-      nav2.classList.toggle("w-0");
-      document.body.classList.toggle("overflow-y-hidden")
-      setTimeout(() => {
-        navy.classList.toggle("hover:rotate-[180deg]");
-      }, 200);
-    }
-  </script>
+<script>document.querySelector("footer h3").innerHTML=`Vishesh Singh © ${(new Date).getFullYear("")} All rights reserved. `,document.addEventListener("contextmenu",(e=>{e.preventDefault()})),document.onkeydown=function(e){return 123!=event.keyCode&&(!e.ctrlKey||e.keyCode!="E".charCodeAt(0))&&(!e.ctrlKey||!e.shiftKey||e.keyCode!="I".charCodeAt(0))&&(!e.ctrlKey||!e.shiftKey||e.keyCode!="J".charCodeAt(0))&&(!e.ctrlKey||e.keyCode!="U".charCodeAt(0))&&(!e.ctrlKey||e.keyCode!="S".charCodeAt(0))&&(!e.ctrlKey||e.keyCode!="H".charCodeAt(0))&&(!e.ctrlKey||e.keyCode!="A".charCodeAt(0))&&(!e.ctrlKey||e.keyCode!="F".charCodeAt(0))&&(!e.ctrlKey||e.keyCode!="E".charCodeAt(0))&&void 0};const others=document.querySelector(".others"),web=document.querySelector(".web"),form=document.querySelector("#form"),servtype=document.querySelector("#servtype"),body=document.querySelector("#main"),bt1=document.querySelector("#btn1"),bt2=document.querySelector("#btn2"),submit=document.querySelector("#submit"),name1=web.querySelector("input[name='name1']"),email1=web.querySelector("input[name='email1']"),reqs1=web.querySelector("#reqs1"),email2=others.querySelector("input[name='email2']"),reqs2=others.querySelector("#reqs2"),form1=[name1,email1,reqs1],form2=[email2,reqs2];function checkval(){"web"==servtype.value?(main.style.background="#000",rem1add2(web,others,form1,form2)):"others"==servtype.value&&(main.style.backgroundImage="linear-gradient(330deg, #AFE3BC 57%, #8E8BE0 70%)",rem1add2(others,web,form2,form1))}function ValidateEmail(e){return!!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.getElementById(e).value.trim())}function op0op1(e){e.classList.toggle("opacity-0"),e.classList.toggle("animate-scale"),setTimeout((()=>e.classList.toggle("animate-scale")),2100)}function rem1add2(e,t,o,r){t.classList.contains("opacity-0")?(op0op1(e),e.classList.toggle("z-50"),o.forEach((e=>e.toggleAttribute("required")))):(t.classList.toggle("opacity-0"),t.classList.toggle("z-50"),e.classList.toggle("z-50"),op0op1(e),r.forEach((e=>e.toggleAttribute("required"))),o.forEach((e=>e.toggleAttribute("required"))))}function setVal(e,t){document.getElementById(e).value=t}function valForm(e){e.forEach((e=>{(e.value.trim().length>0||""!=e.value)&&(console.log(e.value),e.value="")}))}function formFunc(e,t,o,r){if(o.querySelector(".aftersubmit").style.display="none",ValidateEmail(r)){var a=new XMLHttpRequest,n=new FormData(form);a.open("POST",e),a.send(n),a.onreadystatechange=function(){a.readyState==XMLHttpRequest.DONE&&(form.reset(),setVal("servtype",t),o.querySelector(".aftersubmit").style.display="block")}}}servtype.addEventListener("change",(()=>{""!=this.value&&(document.querySelector("footer").classList.remove("absolute"),document.body.classList.remove("overflow-hidden"),document.body.classList.add("overflow-x-hidden")),checkval()})),web.querySelectorAll("input").forEach((e=>e.addEventListener("input",(()=>{document.querySelector(".aftersubmit").style.display="none"})))),others.querySelectorAll("input").forEach((e=>e.addEventListener("input",(()=>{document.querySelectorAll(".aftersubmit").forEach((e=>e.style.display="none"))})))),form.addEventListener("submit",(e=>{e.preventDefault()})),bt1.addEventListener("click",(e=>{formFunc("/submissions/submit1.php","web",e.target.parentElement,"email1")})),bt2.addEventListener("click",(e=>{formFunc("/submissions/submit2.php","others",e.target.parentElement,"email2")})),navy=document.getElementById("navvh"),sec=document.getElementById("sec"),nav=document.querySelector("#nav"),nav1=navy.querySelector("span:nth-child(1)"),nav2=navy.querySelector("span:nth-child(2)"),nav3=navy.querySelector("span:nth-child(3)"),navy.onclick=function(){sec.classList.toggle("scale-0"),nav1.classList.toggle("rotate-45"),nav1.classList.toggle("translate-y-3.5"),nav3.classList.toggle("-rotate-45"),nav3.classList.toggle("-translate-y-3.5"),nav2.classList.toggle("w-full"),nav2.classList.toggle("w-0"),document.body.classList.toggle("overflow-y-hidden"),setTimeout((()=>{navy.classList.toggle("hover:rotate-[180deg]")}),200)};</script>
 </body>
 
 </html>

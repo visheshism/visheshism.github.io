@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, scalable=no">
     
     <title>Others</title>
     <link rel="icon" type="image/png" href="/assets/ico-dd3ad0b8.png" />
@@ -80,7 +80,7 @@
             <div class="font-rSlab xl:text-[41px] md:text-[34px] text-[32px] uppercase text-[#4d0101] font-semibold text-center w-full my-4">
                 Graphic Design
         </div>
-        <div class="font-poppins text-[18px] md:text-[22px] xl:text-[23px] px-8 ml-[10%] md:ml-[26.5%] lg:ml-[34%] xl:ml-[30%]">
+        <div class="font-poppins text-[18px] md:text-[22px] xl:text-[23px] px-8 max-[480px]:px-2 ml-[10%] md:ml-[26.5%] lg:ml-[34%] xl:ml-[30%] break-all">
             Posters Making - On Demand
             <ul class="list-disc list-inside w-[80%] ">
                 <li>High Quality Graphics Poster; Video; Presentation;</li>
@@ -93,7 +93,7 @@
         <div class="font-rSlab xl:text-[41px] md:text-[34px] text-[32px] uppercase text-[#090042] font-semibold text-center w-full my-4">
             Social Media Marketing
         </div>
-        <div class="font-poppins text-[18px] md:text-[22px] xl:text-[23px] ml-[15%] flex flex-col items-start mx-8 md:ml-[30%] lg:ml-[37%]  xl:ml-[32%] 2xl:ml-[31.5%]">
+        <div class="font-poppins text-[18px] md:text-[22px] xl:text-[23px] max-[480px]:ml-[12%] max-[480px]:mx-4 ml-[15%] flex flex-col items-start mx-8 md:ml-[30%] lg:ml-[37%]  xl:ml-[32%] 2xl:ml-[31.5%] break-all">
             Not a Pro, Just starting up
             <ul class="list-disc list-inside w-[100%]">
                 <li>Instagram Ads</li>
@@ -114,39 +114,11 @@
                     href="/getintouch/">Get in Touch</a>
         </div>
         <hr class="w-[97%] mx-auto">
-        <h3 class="py-5 text-center font-poppins text-white sm:text-2xl text-xl tracking-wider ">Vishesh Singh © 2022
+        <h3 class="py-5 text-center font-poppins text-white md:text-2xl text-xl tracking-wider max-[460px]:text-[19px] px-6 break-all">Vishesh Singh © 2022
             All rights reserved.</h3>
     </footer>
     <script>
-    document.querySelector("footer h3").innerHTML =`Vishesh Singh © ${(new Date()).getFullYear("")} All rights reserved. `;
-        navy = document.getElementById("navvh");
-        sec = document.getElementById("sec");
-        nav = document.querySelector("#nav")
-        nav1 = navy.querySelector("span:nth-child(1)");
-        nav2 = navy.querySelector("span:nth-child(2)");
-        nav3 = navy.querySelector("span:nth-child(3)");
-
-        navy.onclick = function () {
-
-            nav.classList.toggle("border-b-0");
-            nav.classList.toggle("border-b-2");
-
-            sec.classList.toggle("scale-0");
-
-            nav1.classList.toggle("rotate-45");
-            nav1.classList.toggle("translate-y-3.5");
-
-            nav3.classList.toggle("-rotate-45");
-            nav3.classList.toggle("-translate-y-3.5");
-
-
-            nav2.classList.toggle("w-full");
-            nav2.classList.toggle("w-0");
-            document.body.classList.toggle("overflow-y-hidden")
-            setTimeout(() => {
-                navy.classList.toggle("hover:rotate-[180deg]");
-            }, 200);
-        }
+  document.querySelector("footer h3").innerHTML=`Vishesh Singh © ${(new Date).getFullYear("")} All rights reserved. `,navy=document.getElementById("navvh"),sec=document.getElementById("sec"),nav=document.querySelector("#nav"),nav1=navy.querySelector("span:nth-child(1)"),nav2=navy.querySelector("span:nth-child(2)"),nav3=navy.querySelector("span:nth-child(3)"),navy.onclick=function(){nav.classList.toggle("border-b-0"),nav.classList.toggle("border-b-2"),sec.classList.toggle("scale-0"),nav1.classList.toggle("rotate-45"),nav1.classList.toggle("translate-y-3.5"),nav3.classList.toggle("-rotate-45"),nav3.classList.toggle("-translate-y-3.5"),nav2.classList.toggle("w-full"),nav2.classList.toggle("w-0"),document.body.classList.toggle("overflow-y-hidden"),setTimeout((()=>{navy.classList.toggle("hover:rotate-[180deg]")}),200)};
     </script> 
 </body>
 
